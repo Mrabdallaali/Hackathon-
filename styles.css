@@ -1,4 +1,4 @@
-
+/* 
 :root {
     --bg-color: darkcyan;
     --text-color: aliceblue;
@@ -7,14 +7,14 @@
   }
   
   /* Dark mode overrides */
-  body.dark-mode {
+/* body.dark-mode {
     --bg-color: #111;
     --text-color: #f1f1f1;
     --button-bg: #f1f1f1;
     --button-text: #111;
-  }
-  
-  body {
+  } */
+
+/* body {
     font-family: sans-serif;
     text-align: center;
     padding: 10px;
@@ -22,9 +22,9 @@
     background-color: darkcyan;
     color: aliceblue;
     transition: 0.3s;
-  }
-  
-  .beautText {
+  } */
+
+/* .beautText {
     font-weight: 100;
     font-size: 25px;
     color: wheat;
@@ -37,20 +37,69 @@
     flex-direction: column;
     gap: 10px;
   }
-  
-  .controls button {
+   */
+/* .controls button {
     background: #333;
     color: white;
     border: none;
     border-radius: 8px;
     padding: 8px 12px;
     cursor: pointer;
-  }
-  
-  /* 
+  } */
+
+/* 
   .container,
   h1,
   h3 {
     text-align: center;
   } */
-  
+/* */
+
+:root {
+  --bg-color: darkcyan;
+  --text-color: aliceblue;
+  --button-bg: #333;
+  --button-text: white;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --bg-color: #111;
+  --text-color: #f1f1f1;
+  --button-bg: #f1f1f1;
+  --button-text: #111;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.beautText {
+  font-weight: 100;
+  font-size: 25px;
+  color: wheat;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.controls button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
